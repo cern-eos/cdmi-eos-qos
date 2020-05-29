@@ -48,7 +48,7 @@ and repackage the server
 ```xml
 <dependency>
     <groupId>org.dcache.spi</groupId>
-    <artifactId>cdmi-dcache-qos</artifactId>
+    <artifactId>cdmi-eos-qos</artifactId>
     <version>1.0</version>
 </dependency>
 ```
@@ -91,7 +91,7 @@ davix-http -X GET -H 'Authorization: "Bearer: $OIDC"' -H 'Accept: "application/c
 
 ```
 davix-http -X PUT -H 'Authorization: "Bearer: $OIDC"' -H 'Content-Type: "application/cdmi-object"' \
-    --data '{"capabilitiesURI": "/cdmi_capabilities/dataobject/<capability-type"}' \
+    --data '{"capabilitiesURI": "/cdmi_capabilities/dataobject/<capability-type>"}' \
     https://cdmi-server.cern.ch:8443/<file-path>
 ```
 
